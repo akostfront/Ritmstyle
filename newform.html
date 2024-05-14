@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/logo.ico">
+    <title >RitmStyle</title>
+</head>
+<body class="wrapper">
+    <header class="header">
+    
+   <div class="header__container _container">
+      <div class="header__body">
+         <div class="header__left">
+            <a href="index.html" class="header__logo">
+               <img src="img/rootfile/icons/logo.svg" alt="">
+            </a>
+            <div class="header__menu menu">
+               <div class="menu__icon ">
+                  <span></span>
+               </div>
+               <nav class="menu__body">
+                  <ul class="menu__list">
+                     <li>
+                        <a href="index.html" class="menu__link">Главная</a>
+                     </li>
+                     <li>
+                        <a data-goto=".seans"  href="index.html#seans" class="menu__link">Сеансы</a>
+                     </li>
+                     <li>
+                        <a data-goto="#coments" href="index.html#coments" class="menu__link">Отзывы</a>
+                     </li>
+                     <li>
+                        <a data-goto="#contacts" href="index.html#contacts" class="menu__link">Контакты</a>
+                     </li>
+                     <li>
+                        <a href="news.html" class="menu__link">Новости</a>
+                     </li>
+                     <li>
+                        <a data-goto="#about" href="index.html#about" class="menu__link">Обо мне</a>
+                     </li>
+                     <li>
+                        <a href="blog.html" class="menu__link">Блог</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="header__button">
+            <a href="#popup" class="popup-link header__btn btn">Записаться на сеанс</a>
+         </div>
+      </div>
+   </div>
+</header>
+    <div class="page">
+        <section class="format _container">
+            <div class="format__body">
+                <h2 class="format__title title">Новый формат сеансов</h2>
+                <div class="format__inner">
+                    <div class="format__content">
+                        <div class="format__data _data">13.02.2024</div>
+                        <h2 class="format__content-title">Новый формат сеансов</h2>
+                        <div class="format__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.
+                            </p>
+                            <p>Tempor facilisis tellus ac, odio. A amet congue tristique nibh malesuada lectus. Purus quam dapibus rhoncus iaculis amet tristique. Mattis fusce lorem fames mauris orci rhoncus, amet fringilla. Quis integer vitae at vitae urna etiam sed eu sit.</p>
+                            <p>Vitae turpis ullamcorper habitant fermentum aliquet volutpat.</p>
+                        </div>
+                    </div>
+                    <div class="format__image">
+                        <img src="img/rootfile/main/form.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+    <div class="footer__body _container">
+    <div class="footer__copy">© 2018-2022 RitmStyle</div>
+    <div class="footer__made">Сделано d-e-n.info</div>
+    </div>
+</footer>
+
+    <div id="popup" class="popup">
+    <div class="popup__body">
+        <div class="popup__content form">
+            <a href="#" class="popup__close close-popup">x</a>
+            <form id="form" onsubmit="submitForm(event)">
+                <div class="form__left-decoration"></div>
+                <div class="form__right-decoration"></div>
+                <div class="form__circle"></div>
+                <div class="form__wrapper">
+                    <h3>Записаться на сеанс</h3>
+                    <div class="form__field-inner">
+                        <input type="text" name="name" placeholder="ФИО">
+                        <span class="form__error" data-for="name"></span>
+                    </div>
+                    <div class="form__field-inner">
+                        <input type="tel" name="phone" placeholder="Телефон">
+                        <span class="form__error" data-for="phone"></span>
+                    </div>
+                    <div class="form__field-inner">
+                        <input type="text" name="email" placeholder="Email">
+                        <span class="form__error" data-for="email"></span>
+                    </div>
+                    <div class="form__field-inner">
+                        <textarea name="message" placeholder="Сообщение..." rows="3"></textarea>
+                        <span class="form__error" data-for="message"></span>
+                    </div>
+                    <button class="form__btn" type="submit">Отправить</button>
+                    <div class="form__send-result"></div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
